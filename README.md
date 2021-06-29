@@ -6,6 +6,20 @@ This repository houses the request for comments which are current or confirmed f
 
 _Note:_ the contents of this repository are in heavy development, so please tread lightly until we declare things as stable. 
 
+## Projects
+
+| Project | Description | Status
+--- | --- | ---
+Design System | A set of React components based on the DTA's design system | 🚧 In Progress
+Core | Core
+
+## Values
+
+- Accessibility
+- Forever Open
+- Built to standards
+- Modern
+
 ## History
 
 Wattle was born out a humble collaboration between Temora Shire, Coolamon Shire councils and Anomaly Software. The initial version delivered a simple workflow and payment solution to manage orders of building and property certificates. The three key features of the initial platform were 
