@@ -12,8 +12,10 @@ _Note:_ the contents of this repository are in heavy development, so please trea
 
 | Project | Description | Status
 --- | --- | ---
-Design System | A set of React components based on the DTA's design system | 🚧 In Progress
-Core | Core
+Design System | A set of React components based on the DTA's design system guidelines | 🚧 In Progress
+Foundation | The foundation platform providing the ground work to build modules | 🚀 Alpha
+[RFC-001](RFC/RFC-001.md) | Building and property certificates | 🗺 Planning
+[RFC-006](RFC/RFC-006.md) | Electronic Property Filing | 🚧 In Progress
 
 ## Values
 
