@@ -1,5 +1,8 @@
 # Wattle
 
+![city scape hero][hero]
+[hero]: https://github.com/wattlecloud/RFC/raw/master/src/common/images/hero.png "city scape hero"
+
 Wattle is a full open sourced platform that aims to fundamentally improve the software stack for the public sector. Although we are primarily aimed at the public sector, the intellectual property has the potential to improve the workflows of many similar organisations.
 
 This repository houses the request for comments which are current or confirmed future features of the platform.
