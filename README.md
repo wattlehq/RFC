@@ -73,6 +73,6 @@ Note: that all source code and documentation are housed in different repositorie
 
 # License
 
-All work on the Wattle project is published under the Apache 2.0 License, unless otherwise noted.
+All work on the Wattle project is published under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0.html), unless otherwise noted.
 
 [hero]: https://github.com/wattlecloud/RFC/blob/145a1d372c3a5367b07fcc28d4cb6e84d4ed6491/images/hero.png "city scape hero"
