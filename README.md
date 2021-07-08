@@ -1,4 +1,6 @@
-# Wattle
+# Wattle Cloud Platform
+
+> **NOTE:** the contents of this repository are in **HEAVY** development, so please tread lightly until we declare things as stable. 
 
 ![city scape hero][hero]
 
@@ -6,7 +8,6 @@ Wattle is a full open sourced platform that aims to fundamentally improve the so
 
 This repository houses the request for comments which are current or confirmed future features of the platform.
 
-_Note:_ the contents of this repository are in heavy development, so please tread lightly until we declare things as stable. 
 
 ## Projects
 
