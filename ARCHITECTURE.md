@@ -21,7 +21,10 @@ All of our web clients are built a [Single-page-application](en.wikipedia.org/wi
 # Types of Modules
 
 
+
 ## Truth
+
+Many workflows depend on sources of truth. A source of truth is set of absolute truths linked to an organisation. 
 
 ## Workflow
 
