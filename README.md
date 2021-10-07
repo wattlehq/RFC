@@ -15,7 +15,8 @@ This repository houses the request for comments which are current or confirmed f
 Design System | A set of React components based on the DTA's design system guidelines | 🚧 In Progress
 [RFC-001](RFC/RFC-001.md) | Foundation [Server](https://github.com/wattlecloud/foundation-server) and [Client](https://github.com/wattlecloud/foundation-web-client) | 🚀 Alpha
 [RFC-002](RFC/RFC-002.md) | Building and property certificates | 🗺 Planning
-[RFC-006](RFC/RFC-006.md) | Electronic Property Filing | 🚧 In Progress
+[RFC-003](RFC/RFC-003.md) | Membership management | 🚧 In Progress
+[RFC-006](RFC/RFC-006.md) | Electronic Property Filing | 🧪 Alpha
 
 ## History
 
