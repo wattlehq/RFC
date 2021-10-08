@@ -10,7 +10,7 @@ ID | Title | Rationale | Status
 [002](RFC-002.md) | Building and property certificates | An online workflow for ordering and managing the delivery of building and property certificates | 👷‍♀️ Rebuild
 [003](RFC-003.md) | Membership management | Membership management workflow for recreation centres (e.g swimming pool) | 📃 Proposed
 [004](RFC-004.md) | Facilities geospatial mapping | A baseline platform to build Geomapping features e.g Safe Sharps | 📃 Proposed
-[005](RFC-005.md) | Building and property inspection workflow | A mobile workflow for conducting building and property inspections | 🛑 Pending detail 
+[005](RFC-005.md) | Building and property inspection workflow | A mobile workflow for conducting building and property inspections | 🛑 Deferred  
 [006](RFC-006.md) | Electronic Property Filing | A purpose built filing system for property documents | 🚧 In Progress 
 
 ## Lifecycle of an RFC
