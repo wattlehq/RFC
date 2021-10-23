@@ -15,3 +15,42 @@ ID | Title | Rationale | Status
 
 ## Lifecycle of an RFC
 
+An RFC follows goes through these stages:
+
+- [ ] A customer or project participant proposes a feature, proposals must be defined at a high level to capture the requirements of the organisation
+- [ ] The RFC is revised by the technology team in consultation with the customer
+- [ ] A build is commissioned upon approval
+- [ ] Upon successful completion and validation the repositories are accepted into the main project
+- [ ] Revisions are made to the RFC to keep adding new features
+
+> Development can begin outside the Wattle project and subsequently be merged back into the main project.
+
+## General design rules
+
+Wattle is made up of numerous sub-projects. This makes it rather challenging to ensure that each project is able to colocate with another. These are general set of guidelines that each module must adhere to. Some of these are technological, others are conventional.
+
+### Schema
+
+Wattle is designed to be use `postgres` as a backend (using other database servers is possible, however our design assumes `postgres` as the standard), a notable requirement is support for [schemas](https://www.postgresql.org/docs/9.1/ddl-schemas.html). Each module must create tables in a `schema` they control, they must also ensure that `alembic` migrations are local to this schema.
+
+A module may cross reference one or more mother modules. A module must not create tables, views on another schema other than their own.
+
+### Naming modules and repositories 
+
+Each module must have a unique name that is accepted by the rest of the project. The name `foundation` is reserved for the base module that everyone else depends on. All changes to `foundation` must be approved by the core team.
+
+A module must at a minimum have two repositories:
+
+- `prefix-server` - which houses the code the to server side API, worker, webhooks, etc
+- `prefix-web-client` - which has a PWA built using (but not limited to) React
+
+### URL schemes
+
+Each module is expected to make available:
+
+- A set of APIs (which build upon foundation)
+- A PWA that is mounted on a base URL
+
+
+
+# Discovery schema
