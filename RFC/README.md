@@ -51,6 +51,56 @@ Each module is expected to make available:
 - A set of APIs (which build upon foundation)
 - A PWA that is mounted on a base URL
 
+Assuming that the software is deployed on the `root` of a domain e.g `service.temora.nsw.gov.au` these URL design patters must be followed. Assuming `prefix` is the name of the module:
 
+#### Server side
+
+- All API will be prefixed with `/api/prefix/`  e.g `/api/auth/login`
+- API endpoints must conform to RESTful design principles
+- Server modules must depend on the `foundation` module and build upon the authentication layer 
+- Use the same `redis` instance that `foundation` manages but have their own set of `workers`
+- URLs must be protected based on the permissions of the logged in user
+
+#### Client side
+
+- You must assume you are mounted on `sub-url` of the deployment, i.e  `/prefix/(a-z)`
+- Are required to manage `history` based routing from that sub location
+- You must support the browser back button for all logical interactions
+- Name all URLs so they make navigation sense to users (think about bookmarking and sharing via electronic communication or printing on promotional material) e.g `/certificates` or `/certificates/purchase`
+- Must not break cross domain policies
+
+#### URL prefixes
+
+A module typically makes available customer facing, organisation facing and management interfaces.
+
+- `/prefix/customer/*` - customer facing URLs
+- `/prefix/staff/*` - URLs for staff members, authorisation to be implemented per module.
+- `/prefix/settings/*` - Interfaces for settings, these may be limited to users with elevated privilege.
 
 # Discovery schema
+
+Although Wattle is so modular, we intend to present the user with a unified navigational experience. This is partly facilitate by the design rules above, complimented by a discovery protocol that allows a module to present itself as part of an installation.
+
+- `/prefix/.wattle-discovery/meta.json` - exposes meta data about the module
+- `/prefix/.wattle-discovert/dashboard.json` - exposes widget data for the currently logged in user
+
+# Deployment
+
+```
++---------------------------------------------------------+                                           
+|                   Wattle Foundation                     |                                           
++---------------------------------------------------------+                                           
++-----------------+ +-----------------+ +-----------------+                                           
+|       EPF       | |   Memberships   | |       etc.      |                                           
++-----------------+ +--------|--------+ +-----------------+                                           
+                             |                                                                        
+                             |                                                                        
+                             |                                                                        
+                             |                                                                        
+                             |                                                                        
++---------------------------------------------------------+                                           
+|                                                         |                                           
+|                         Docker                          |                                           
+|                                                         |                                           
++---------------------------------------------------------+            
+```
