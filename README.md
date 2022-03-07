@@ -1,4 +1,4 @@
-# Wattle Cloud Platform
+# Wattle Cloud Project
 
 > **NOTE:** the contents of this repository are in **HEAVY** development, so please tread lightly until we declare things as stable. 
 
